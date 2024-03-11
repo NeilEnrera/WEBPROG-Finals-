@@ -1,0 +1,238 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* Define Variables */
+:root {
+    --body-bg: #061320; /* Same as the login page */
+    --box-bg: #fff;
+    --box-border-color: #dbdbdb;
+    --txt-color: #262626;
+    --txt-second-color: #8e8e8e;
+    --btn-bg: #0095f6;
+    --btn-color: #fff;
+    --fb-color: #385185;
+    --a-color: #00376b;
+}
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--body-bg);
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    margin-left: 10px;
+    height: 100vh;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.main-container {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh;
+}
+
+.main-content {
+    max-width: 350px; /* Adjusted max-width */
+}
+
+.slide-container {
+    height: 618px;
+    flex-basis: 454px;
+}
+
+.slide-content {
+    margin: 99px 0 0 151px;
+    position: relative;
+}
+
+.slide-content img {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.slide-content img.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form-container {
+    flex-grow: 1;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box {
+    border: 1px solid var(--box-border-color);
+    background-color: var(--box-bg);
+    border-radius: 3px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-content {
+    margin-bottom: 10px;
+}
+
+.signin-form {
+    padding-top: 24px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin: 0 10px 6px;
+}
+
+.animate-input {
+    position: relative;
+    margin-bottom: 10px;
+    border: 1px solid var(--box-border-color); /* Added border */
+    border-radius: 3px; /* Added border radius */
+}
+
+.animate-input span {
+    position: absolute;
+    left: 8px;
+    top: -10px; /* Adjusted top position */
+    background-color: #fff; /* Added background color */
+    padding: 0 5px; /* Added padding */
+    font-size: 12px;
+    color: var(--txt-second-color);
+    pointer-events: none;
+    transition: top 0.1s ease-in-out;
+}
+
+.animate-input input {
+    width: 100%;
+    height: 36px;
+    padding: 9px 8px 7px;
+    border: 0;
+    outline: 0;
+    background-color: var(--box-bg);
+    color: var(--txt-color);
+    border-radius: 3px;
+}
+
+.animate-input.active span {
+    top: -20px; /* Adjusted top position */
+    font-size: 10px; /* Adjusted font size */
+}
+
+
+.btn-group {
+    padding: 8px 40px;
+}
+
+.btn-login {
+    width: 100%;
+    border: 1px solid transparent;
+    outline: 0;
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 5px 9px;
+    border-radius: 4px;
+}
+
+button:disabled {
+    background-color: rgba(0, 149, 246, 0.3);
+}
+
+.divine {
+    padding: 10px 40px 18px;
+    display: flex;
+}
+
+.divine div:nth-child(2) {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    margin: 0 18px;
+    color: var(--txt-second-color);
+}
+
+.divine div:nth-child(1),
+.divine div:nth-child(3) {
+    flex-grow: 1;
+    height: 1px;
+    background-color: var(--box-border-color);
+    position: relative;
+    top: 0.45em;
+}
+
+.forgot-pw {
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 12px;
+    text-align: center;
+    color: var(--a-color);
+    text-decoration: none;
+}
+
+.goto {
+    padding: 10px 50px;
+}
+
+.goto p {
+    font-size: 14px;
+    margin: 15px;
+    text-align: center;
+}
+
+.goto a {
+    text-decoration: none;
+    color: var(--btn-bg);
+    font-size: inherit;
+    line-height: 18px;
+    font-weight: 600;
+}
+
+.animate-input {
+    position: relative;
+    margin-bottom: 10px;
+    border: 1px solid var(--box-border-color); /* Added border */
+    border-radius: 3px; /* Added border radius */
+}
+
+.animate-input span {
+    position: absolute;
+    left: 8px;
+    top: -10px; /* Adjusted top position */
+    background-color: #fff; /* Added background color */
+    padding: 0 5px; /* Added padding */
+    font-size: 12px;
+    color: var(--txt-second-color);
+    pointer-events: none;
+    transition: top 0.1s ease-in-out;
+}
+
+.animate-input input {
+    width: 100%;
+    height: 36px;
+    padding: 9px 8px 7px;
+    border: 0;
+    outline: 0;
+    background-color: var(--box-bg);
+    color: var(--txt-color);
+    border-radius: 3px;
+}
+
+.animate-input.active span {
+    top: -20px; /* Adjusted top position */
+    font-size: 10px; /* Adjusted font size */
+}
